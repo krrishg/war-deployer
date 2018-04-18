@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo cp build/libs/$1.war /var/lib/$2/webapps/
+sudo rm -rf /var/libs/$2/webapps/$1/
+sudo systemctl restart $2.service
